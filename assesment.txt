@@ -1,0 +1,52 @@
+QN 1. What is Emmet ?
+Emmet is a web development tool that helps increase productivity and speed up the process of writing HTML and CSS code. It was originally known as "Zen Coding" and created by Sergey Chikuyonok. Later on, it was renamed to "Emmet.
+div>ul>li*3
+h1+p
+div#container
+p{Hello World}
+
+QN 2. What is CDN ? Why we use it ?
+
+    CDN stands for Content Delivery Network. It is a distributed network of servers strategically placed in different geographic locations around the world. The primary purpose of a CDN is to deliver web content, such as images, videos, stylesheets, scripts, and other static assets, to end-users more efficiently and with improved performance.
+
+    When a user visits a website that utilizes a CDN, the CDN's servers work together to serve the requested content. Here's how it works:
+
+    Caching: When a user accesses a particular asset on a website (e.g., an image or a JavaScript file), the CDN caches (stores) a copy of that asset on its servers. This means that subsequent requests for the same asset from other users, or even the same user from a different location, can be served from the nearby CDN server instead of the original server where the website is hosted.
+
+    Reduced Latency: CDN servers are strategically distributed in multiple locations, often closer to the end-users. As a result, the content can be delivered from a nearby server, reducing the round-trip time (latency) required to fetch the content. This significantly improves the loading speed of web pages, especially for users located far away from the website's origin server.
+
+    Load Distribution: By offloading the delivery of static content to CDN servers, the load on the website's origin server is reduced. This means the website can handle more concurrent users and experience lower chances of overloading during traffic spikes or heavy usage periods.
+
+    Improved Reliability: CDNs are designed with redundancy and failover mechanisms. If one server fails or experiences issues, the CDN can automatically route requests to another available server, ensuring the content remains accessible.
+
+    Security and DDoS Protection: Some CDNs offer security features like DDoS protection and Web Application Firewall (WAF) to mitigate potential threats and attacks on the website.
+
+    Global Scalability: CDNs can easily scale to accommodate increasing traffic demands without much impact on the website's performance.
+
+QN 3 Why is react as known as React ?
+
+    React is called "React" because of its core principle of efficiently updating and rendering user interfaces. The name "React" comes from the way it handles changes in a web application's state and automatically reacts to those changes by  efficiently updating the DOM (Document Object Model) to reflect the new state of the application.
+
+    The key concept behind React is its virtual DOM (VDOM). Instead of directly manipulating the actual DOM, which can be slow and inefficient, React creates a virtual representation of the DOM in memory. When there are changes to the application's state, React calculates the difference between the virtual DOM and the actual DOM (a process called "reconciliation") and then efficiently updates only the necessary parts of the real DOM. This approach minimizes unnecessary DOM manipulations and reflows, resulting in faster and more efficient rendering of UI components.
+
+
+Qn 4 What is the Cross-Origin from script tag ?
+
+    The "Cross-origin" attribute in the script tag is called "Cross-Origin Resource Sharing" (CORS). It is a security feature implemented by web browsers to control how web pages from one domain can request and access resources (e.g., scripts, fonts, images, etc.) hosted on another domain. The same-origin policy is a fundamental security measure that prevents malicious websites from making unauthorized requests to and reading sensitive data from other domains.
+
+QN 5 What is difference between react.development.js and react.production.js files via CDN ?
+
+    The difference between react.development.js and react.production.js files lies in how they are optimized for different stages of a React application's development and deployment lifecycle.
+
+    react.development.js:
+    This file is intended for use during development and debugging stages of a React application.
+    It contains the full and unminified version of the React library with helpful error messages and warnings. This makes it easier to identify and debug issues in the code during development.
+    The file size is larger compared to the production version due to the inclusion of development-specific features and additional code for better error handling and diagnostics.
+
+    react.production.js:
+    This file is optimized for production deployment of a React application.
+    It contains a minified and production-ready version of the React library, which means that unnecessary whitespace and comments have been removed, and the code has been optimized for performance and size.
+    The production version is stripped of all development-specific features, such as error messages and warnings. This reduction in code size results in faster loading times and improved performance for end-users.
+    The file size is smaller compared to the development version, which is beneficial for faster downloads and reduced data usage for website visitors.
+
+
